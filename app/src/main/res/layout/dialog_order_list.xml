@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never" />
+
+    <TextView
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_red"
+        android:paddingBottom="10dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:paddingTop="10dp"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14" />
+
+</LinearLayout>

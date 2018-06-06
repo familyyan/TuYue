@@ -1,0 +1,1 @@
+include ':app', ':1905DrmServiceLib', ':hwtxtreaderlib', ':jiaozivideoplayer', ':okhttputils'

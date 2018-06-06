@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单编号："
+                android:textColor="@color/little_black"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/order_No"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E201711230001"
+                android:textColor="@color/hint_color"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下单时间："
+                android:textColor="@color/little_black"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/order_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-12-25 12:25:22"
+                android:textColor="@color/hint_color"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="座  位  号："
+                android:textColor="@color/little_black"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/order_zuoW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D27"
+                android:textColor="@color/hint_color"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单金额："
+                android:textColor="@color/little_black"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/order_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥64.00"
+                android:textColor="@color/red"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

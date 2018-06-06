@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="movie_menu">
+        <item>本地资源</item>
+        <item>VIP专区</item>
+        <item>新片速递</item>
+        <item>国产电影</item>
+        <item>欧美大片</item>
+    </string-array>
+    <string-array name="setting_menu">
+        <item>数据同步</item>
+        <item>系统版本</item>
+        <item>网络设置</item>
+        <item>IP设置</item>
+        <item>热点设置</item>
+        <item>关于我们</item>
+    </string-array>
+
+</resources>

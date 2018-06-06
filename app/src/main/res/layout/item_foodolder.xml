@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/order_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:singleLine="true"
+        android:text="红烧牛肉面"
+        android:textColor="#FF5E5E5E"
+        android:textSize="@dimen/sp_16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="￥"
+            android:textColor="#FFFF2645"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/order_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:text="20"
+            android:textColor="#FFFF2645"
+            android:textSize="@dimen/sp_18" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical">
+
+            <ImageView
+                android:id="@+id/jian_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_delate" />
+
+            <TextView
+                android:id="@+id/order_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="1"
+                android:textColor="#FF5E5E5E"
+                android:textSize="@dimen/sp_18" />
+
+            <ImageView
+                android:id="@+id/add_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_add_checked" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/hint_color" />
+
+</LinearLayout>

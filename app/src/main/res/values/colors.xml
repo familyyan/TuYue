@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff000000</color>
+    <color name="colorPrimaryDark">#ff000000</color>
+    <color name="colorAccent">#ff000000</color>
+
+    <color name="red">#FFFF0000</color>
+    <color name="orange">#FFFF7F00</color>
+    <color name="yellow">#FFFFFF00</color>
+    <color name="green">#FF00FF00</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="cyan">#FF00FFFF</color>
+    <color name="purple">#FF8B00FF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+
+    <color name="transport">#00000000</color>
+
+    <color name="transport_half">#50000000</color>
+
+
+
+    <color name="menu_checked">#FFFF2645</color>
+    <color name="menu_text_normal">#FFA7ACB6</color>
+    <color name="menu_text_checked">#FFFFF8F9</color>
+
+    <color name="hint_color">#999999</color>
+    <color name="my_black">#686868</color>
+    <color name="my_green">#25be56</color>
+    <color name="little_black">#474747</color>
+
+    <color name="unlock_text_color">#b8a300</color>
+    <color name="my_red">#ff2645</color>
+</resources>

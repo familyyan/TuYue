@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <com.ywb.tuyue.widget.HeaderView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.github.barteksc.pdfviewer.PDFView
+            android:id="@+id/pdfView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <!--<ScrollView-->
+        <!--android:id="@+id/scrollView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:fillViewport="true"-->
+        <!--android:padding="10dp">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/content"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:lineSpacingExtra="@dimen/dp_10"-->
+        <!--android:textColor="@color/my_black"-->
+        <!--android:textSize="23sp" />-->
+        <!--</ScrollView>-->
+        <com.bifan.txtreaderlib.main.TxtReaderView
+            android:id="@+id/activity_hwtxtplay_readerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/book_er" />
+
+                <TextView
+                    android:id="@+id/show_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本内容来源于QQ阅读\n扫描二维码下载QQ阅读，海量原著 想读就读。"
+                    android:textSize="23sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/last_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:background="@color/transport_half"
+                android:text="上一页" />
+
+            <Button
+                android:id="@+id/next_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/transport_half"
+                android:text="下一页" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

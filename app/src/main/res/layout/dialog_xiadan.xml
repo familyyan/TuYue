@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="请填写送餐信息"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18" />
+
+        <EditText
+            android:id="@+id/phone_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_black_kuang"
+            android:hint="请输入手机号"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="number"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:paddingBottom="15dp"
+            android:paddingLeft="50dp"
+            android:paddingTop="15dp"
+            android:textColor="@color/hint_color"
+            android:textColorHint="@color/hint_color"
+            android:textSize="@dimen/sp_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_black_kuang">
+
+            <EditText
+                android:id="@+id/phone_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@null"
+                android:hint="请输入短信验证码"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="number"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:paddingBottom="15dp"
+                android:paddingLeft="50dp"
+                android:paddingTop="15dp"
+                android:textColor="@color/hint_color"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/sp_16" />
+
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/hint_color" />
+
+            <TextView
+                android:id="@+id/getCode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textSize="@dimen/sp_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/select"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_black_kuang_bg"
+                android:hint="车厢号"
+                android:imeOptions="flagNoExtractUi"
+                android:maxLength="5"
+                android:singleLine="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/hint_color"
+                android:textSize="@dimen/sp_16" />
+
+            <EditText
+                android:id="@+id/select1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_black_kuang_bg"
+                android:hint="座位号"
+                android:imeOptions="flagNoExtractUi"
+                android:maxLength="5"
+                android:paddingBottom="10dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColor="@color/hint_color"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_black_kuang"
+                android:paddingBottom="10dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:paddingTop="10dp"
+                android:text="取消"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/btn_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shape_red"
+                android:paddingBottom="10dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:paddingTop="10dp"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

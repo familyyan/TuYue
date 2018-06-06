@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_icon_submit1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="下单成功"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/order_number_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="2笔订单等待配送..."
+        android:textColor="@color/hint_color"
+        android:textSize="@dimen/sp_14" />
+
+</LinearLayout>

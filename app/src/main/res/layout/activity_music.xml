@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <com.ywb.tuyue.widget.HeaderView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="歌曲"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_20" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="歌手"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_20" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="时长"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_20" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/hint_color" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/music_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f9fbfb"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/music_img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="20dp"
+                android:scaleType="fitXY" />
+
+            <WebView
+                android:id="@+id/lyrics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f9fbfb"
+                android:overScrollMode="never"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@drawable/music_bottom"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/music_last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:src="@drawable/music_shangyiqu" />
+
+        <ImageView
+            android:id="@+id/music_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="15dp"
+            android:src="@drawable/music_play" />
+
+        <ImageView
+            android:id="@+id/music_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:src="@drawable/music_xiayiqu" />
+
+        <ImageView
+            android:id="@+id/music_random"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:padding="15dp"
+            android:src="@drawable/music_order" />
+
+        <TextView
+            android:id="@+id/music_currentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+
+        <SeekBar
+            android:id="@+id/music_progress"
+            style="@style/CustomSeekbarStyle"
+            android:layout_width="550dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/music_totalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/music_volon" />
+
+        <SeekBar
+            android:id="@+id/music_vol"
+            style="@style/CustomSeekbarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp" />
+    </LinearLayout>
+
+</LinearLayout>
